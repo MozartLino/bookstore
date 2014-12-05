@@ -204,3 +204,14 @@ pt-BR:
       long: ! '%d de %B de %Y, %H:%M'
       short: ! '%d de %B, %H:%M'
     pm: ''
+
+  activerecord:
+        models:
+          person: "Pessoa"
+        attributes:
+          person:
+            name: "Nome"
+            email: "E-mail"
+            password: "Senha"
+            born_at: "Data de nascimento"
+            admin: "Administrador"
