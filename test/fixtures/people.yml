@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+admin:
+  name: Eustáquio Rangel
+  email: taq@bluefish.com.br
+  password: secret
+  born_at: 1970-01-01
+  admin: true
+autor:
+  name: Ana Carolina
+  email: carol@bluefish.com.br
+  password: secretagain
+  born_at: 1976-01-01
+  admin: false
