@@ -1,5 +1,4 @@
 require "digest/sha1"
-require 'single_test/tasks'
 
 class Person < ActiveRecord::Base
 

@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
-  resources :people
+  
+  #post 'login/login'
+  #get 'login/login'
+  match "autenticar" => "login#login", via: [:get, :post]
+  get "sair" => 'login#logout'
+
+  resources :people do 
+    member do 
+      get :changed
+    end
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

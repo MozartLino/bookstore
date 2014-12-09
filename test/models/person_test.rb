@@ -87,7 +87,7 @@ class PersonTest < ActiveSupport::TestCase
 	end
 
 	test "deve retornar objeto se email e senha corretos" do
-		person = Person.auth(@person.email,"secret")
+		person = Person.auth(@person.email,"teste")
 		assert_not_nil person
 		assert_kind_of Person, person
 		assert_equal @person.name, person.name

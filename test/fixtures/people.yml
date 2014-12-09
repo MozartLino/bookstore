@@ -2,7 +2,7 @@
 admin:
   name: Eustáquio Rangel
   email: taq@bluefish.com.br
-  password: <%= Person.encrypt_password("secret") %>
+  password: <%= Person.encrypt_password("teste") %>
   born_at: 1970-01-01
   admin: true
 autor:
