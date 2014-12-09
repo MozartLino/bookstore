@@ -21,11 +21,11 @@
   </div>
   <div class="field">
     <%= f.label :password %><br>
-    <%= f.text_field :password %>
+    <%= f.text_field :plain_password %>
   </div>
   <div class="field">
     <%= f.label :born_at %><br>
-    <%= f.date_select :born_at %>
+    <%= f.date_select :born_at, start_year: 100.years.ago.year, end_year: 16.years.ago.year %>
   </div>
   <div class="field">
     <%= f.label :admin %><br>
