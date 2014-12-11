@@ -30,6 +30,8 @@ gem 'single_test'
 
 gem 'simplecov'
 
+gem "codeclimate-test-reporter", group: :test
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
