@@ -1,6 +1,6 @@
 == README
 
-{<img src="https://codeclimate.com/github/ricardo-lino/bookstore/badges/gpa.svg" />}[https://codeclimate.com/github/ricardo-lino/bookstore]{<img src="https://codeclimate.com/github/ricardo-lino/bookstore/badges/coverage.svg" />}[https://codeclimate.com/github/ricardo-lino/bookstore]
+{<img src="https://codeclimate.com/github/ricardo-lino/bookstore/badges/gpa.svg" />}[https://codeclimate.com/github/ricardo-lino/bookstore] {<img src="https://codeclimate.com/github/ricardo-lino/bookstore/badges/coverage.svg" />}[https://codeclimate.com/github/ricardo-lino/bookstore]
 
 bundle install
 bundle exec rails server
