@@ -1,5 +1,7 @@
 == README
 
+[![Code Climate](https://codeclimate.com/github/ricardo-lino/bookstore.png)](https://codeclimate.com/github/ricardo-lino/bookstore)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
