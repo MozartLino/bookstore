@@ -25,10 +25,13 @@ class PeopleControllerTest < ActionController::TestCase
     assert_redirected_to person_path(assigns(:person))
   end
 
-  test "shouldn't create person sem email" do
-    assert_equal('Person.count') do
-      post :create, person: { admin: @person.admin, born_at: @person.born_at, password: @person.password }
-    end
+  test "shouldn't create person com dados inválidos" do
+    @person.email = "email-invalido"
+    count = Person.count
+    post :create, person: { admin: @person.admin, born_at: @person.born_at, email: @person.email, name: @person.name, password: @person.password }
+    
+    assert_equal count, Person.count
+    assert_status :unprocessable_entity
   end
 
   test "should show person" do
@@ -44,6 +47,11 @@ class PeopleControllerTest < ActionController::TestCase
   test "should update person" do
     patch :update, id: @person, person: { admin: @person.admin, born_at: @person.born_at, email: @person.email, name: @person.name, password: @person.password }
     assert_redirected_to person_path(assigns(:person))
+  end
+
+  test "shouldn't update person" do
+    patch :update, id: @person, person: { admin: @person.admin, born_at: @person.born_at, email: "email-invalido", name: @person.name, password: @person.password }
+    assert_equal last_response.status, Rack::Utils.status_code(expected_status)
   end
 
   test "should destroy person" do

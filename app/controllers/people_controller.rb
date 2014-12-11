@@ -66,13 +66,16 @@ class PeopleController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_person
-      @person = Person.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_person
+    @person = Person.find(params[:id]) rescue nil if !@person
+    flash[:notice] = "Pessoa não encontrada"
+    redirect_to action: "index"
+    return
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def person_params
-      params.require(:person).permit(:name, :email, :plain_password, :born_at, :admin)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def person_params
+    params.require(:person).permit(:name, :email, :plain_password, :born_at, :admin)
+  end
 end
