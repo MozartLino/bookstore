@@ -1,5 +1,5 @@
-require 'simplecov'
-SimpleCov.start do
+require "codeclimate-test-reporter"
+CodeClimate::TestReporter.start do 
 end
 
 ENV['RAILS_ENV'] ||= 'test'
