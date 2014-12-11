@@ -1,6 +1,6 @@
 == README
 
-[![Code Climate](https://codeclimate.com/github/ricardo-lino/bookstore.png)](https://codeclimate.com/github/ricardo-lino/bookstore)
+{<img src="https://codeclimate.com/github/ricardo-lino/r24af/badges/gpa.svg" />}[https://codeclimate.com/github/ricardo-lino/r24af]
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
