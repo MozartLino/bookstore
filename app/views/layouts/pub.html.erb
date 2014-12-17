@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Bookstore</title>
+    <%= stylesheet_link_tag  "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+</head>
+<body>
+    <header>
+      <h1>Bookstore - A maior livraria virtual (depois da Amazon)</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><%= link_to "Inicial", "/" %></li>
+        </ul>
+    </nav>
+
+    <section id="main"> <%= yield %></section>
+
+    <footer>
+        Desenvolvido no ebook "Conhecendo Rails"
+    </footer>
+</body>
+</html>

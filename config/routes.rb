@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   
+  get 'login/login'
+  post 'login/login'
+  get 'login/logout'
+
   #post 'login/login'
   #get 'login/login'
   match "autenticar" => "login#login", via: [:get, :post]
